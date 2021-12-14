@@ -226,37 +226,6 @@
     </script>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-     <script>
-         
-         $(document).ready(function () {
-             let rightMenuTurnOn = false
- 
-             function rightMenuToggle() {
-                 if (rightMenuTurnOn) {
-                     $('#right-menu-overlay').css('display', 'none');
-                     $("#right-menu").animate({
-                         right: -320
-                     }, 500);
-                 } else {
-                     $('#right-menu-overlay').css('display', 'block');
-                     $("#right-menu").animate({
-                         right: 0
-                     }, 500);
-                 }
-                 rightMenuTurnOn = !rightMenuTurnOn;
-             }
- 
-             $('#right-menu-toggler').on('click', function () {
-                 rightMenuToggle();
-             });
- 
-             $('#right-menu-overlay').on('click', function () {
-                 rightMenuToggle();
-             })
-         });
- 
-     </script>
-
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
